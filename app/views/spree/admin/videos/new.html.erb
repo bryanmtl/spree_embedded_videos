@@ -1,7 +1,7 @@
 <h4><%= t("new_video") %></h4>
 <p><%=t("video_description")%></p>
 
-<%= render "shared/error_messages", :target => @video %>
+<%= render "spree/shared/error_messages", :target => @video %>
 
 <%= form_for(:video, :url => { :controller => 'videos', :action => 'create' }, :html => { :multipart => true }) do |form| %>
   <table class="basic-table">
