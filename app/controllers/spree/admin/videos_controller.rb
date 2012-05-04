@@ -1,4 +1,6 @@
-class Admin::VideosController < Admin::ResourceController
+module Spree
+module Admin
+class VideosController < ResourceController
   before_filter :load_data
 
   create.before :set_viewable
@@ -46,4 +48,6 @@ class Admin::VideosController < Admin::ResourceController
     @viewable = @video.viewable
   end
 
+end
+end
 end

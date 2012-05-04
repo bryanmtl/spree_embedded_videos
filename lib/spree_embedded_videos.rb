@@ -1,5 +1,4 @@
 require 'spree_core'
-require 'spree_embedded_videos_hooks'
 
 module SpreeEmbeddedVideos
   module Config
