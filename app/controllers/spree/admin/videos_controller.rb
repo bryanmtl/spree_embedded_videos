@@ -47,6 +47,10 @@ class VideosController < ResourceController
   def destroy_before
     @viewable = @video.viewable
   end
+  
+  def model_class
+    Video
+  end
 
 end
 end
